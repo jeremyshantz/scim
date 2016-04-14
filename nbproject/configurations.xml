@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="90">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="cppunitlite" displayName="cppunitlite" projectFiles="true">
+        <itemPath>cppunitlite/Failure.cpp</itemPath>
+        <itemPath>cppunitlite/Failure.h</itemPath>
+        <itemPath>cppunitlite/Main.cpp</itemPath>
+        <itemPath>cppunitlite/Test.cpp</itemPath>
+        <itemPath>cppunitlite/Test.h</itemPath>
+        <itemPath>cppunitlite/TestHarness.h</itemPath>
+        <itemPath>cppunitlite/TestRegistry.cpp</itemPath>
+        <itemPath>cppunitlite/TestRegistry.h</itemPath>
+        <itemPath>cppunitlite/TestResult.cpp</itemPath>
+        <itemPath>cppunitlite/TestResult.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="scims" displayName="scims" projectFiles="true">
+        <itemPath>scim/Email.cpp</itemPath>
+        <itemPath>scim/Email.h</itemPath>
+        <itemPath>scim/EnterpriseUser.cpp</itemPath>
+        <itemPath>scim/EnterpriseUser.h</itemPath>
+        <itemPath>scim/Group.cpp</itemPath>
+        <itemPath>scim/Group.h</itemPath>
+        <itemPath>scim/Manager.cpp</itemPath>
+        <itemPath>scim/Manager.h</itemPath>
+        <itemPath>scim/Meta.cpp</itemPath>
+        <itemPath>scim/Meta.h</itemPath>
+        <itemPath>scim/Name.cpp</itemPath>
+        <itemPath>scim/Name.h</itemPath>
+        <itemPath>scim/PhoneNumber.cpp</itemPath>
+        <itemPath>scim/PhoneNumber.h</itemPath>
+        <itemPath>scim/Resource.cpp</itemPath>
+        <itemPath>scim/Resource.h</itemPath>
+        <itemPath>scim/User.cpp</itemPath>
+        <itemPath>scim/User.h</itemPath>
+      </logicalFolder>
+      <itemPath>Makefile</itemPath>
+      <itemPath>tests.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="Makefile" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cppunitlite/Failure.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cppunitlite/Failure.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cppunitlite/Main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cppunitlite/Test.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cppunitlite/Test.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cppunitlite/TestHarness.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cppunitlite/TestRegistry.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cppunitlite/TestRegistry.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cppunitlite/TestResult.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cppunitlite/TestResult.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="scim/Email.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="scim/Email.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="scim/EnterpriseUser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="scim/EnterpriseUser.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="scim/Group.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="scim/Group.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="scim/Manager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="scim/Manager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="scim/Meta.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="scim/Meta.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="scim/Name.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="scim/Name.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="scim/PhoneNumber.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="scim/PhoneNumber.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="scim/Resource.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="scim/Resource.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="scim/User.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="scim/User.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="Makefile" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cppunitlite/Failure.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cppunitlite/Failure.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cppunitlite/Main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cppunitlite/Test.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cppunitlite/Test.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cppunitlite/TestHarness.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cppunitlite/TestRegistry.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cppunitlite/TestRegistry.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cppunitlite/TestResult.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cppunitlite/TestResult.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="scim/Email.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="scim/Email.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="scim/EnterpriseUser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="scim/EnterpriseUser.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="scim/Group.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="scim/Group.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="scim/Manager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="scim/Manager.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="scim/Meta.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="scim/Meta.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="scim/Name.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="scim/Name.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="scim/PhoneNumber.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="scim/PhoneNumber.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="scim/Resource.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="scim/Resource.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="scim/User.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="scim/User.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
