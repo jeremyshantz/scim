@@ -35,21 +35,28 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/JsonBox/src/Convert.o \
+	${OBJECTDIR}/JsonBox/src/Escaper.o \
+	${OBJECTDIR}/JsonBox/src/IndentCanceller.o \
+	${OBJECTDIR}/JsonBox/src/Indenter.o \
+	${OBJECTDIR}/JsonBox/src/JsonParsingError.o \
+	${OBJECTDIR}/JsonBox/src/JsonWritingError.o \
+	${OBJECTDIR}/JsonBox/src/SolidusEscaper.o \
+	${OBJECTDIR}/JsonBox/src/Value.o \
+	${OBJECTDIR}/UnitTests.o \
 	${OBJECTDIR}/cppunitlite/Failure.o \
 	${OBJECTDIR}/cppunitlite/Main.o \
 	${OBJECTDIR}/cppunitlite/Test.o \
 	${OBJECTDIR}/cppunitlite/TestRegistry.o \
 	${OBJECTDIR}/cppunitlite/TestResult.o \
+	${OBJECTDIR}/jsonTests.o \
 	${OBJECTDIR}/scim/Email.o \
 	${OBJECTDIR}/scim/EnterpriseUser.o \
-	${OBJECTDIR}/scim/Group.o \
-	${OBJECTDIR}/scim/Manager.o \
-	${OBJECTDIR}/scim/Meta.o \
+	${OBJECTDIR}/scim/JSONHelper.o \
 	${OBJECTDIR}/scim/Name.o \
 	${OBJECTDIR}/scim/PhoneNumber.o \
 	${OBJECTDIR}/scim/Resource.o \
-	${OBJECTDIR}/scim/User.o \
-	${OBJECTDIR}/tests.o
+	${OBJECTDIR}/scim/User.o
 
 
 # C Compiler Flags
@@ -76,6 +83,51 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/scims: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/scims ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+${OBJECTDIR}/JsonBox/src/Convert.o: JsonBox/src/Convert.cpp 
+	${MKDIR} -p ${OBJECTDIR}/JsonBox/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/JsonBox/src/Convert.o JsonBox/src/Convert.cpp
+
+${OBJECTDIR}/JsonBox/src/Escaper.o: JsonBox/src/Escaper.cpp 
+	${MKDIR} -p ${OBJECTDIR}/JsonBox/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/JsonBox/src/Escaper.o JsonBox/src/Escaper.cpp
+
+${OBJECTDIR}/JsonBox/src/IndentCanceller.o: JsonBox/src/IndentCanceller.cpp 
+	${MKDIR} -p ${OBJECTDIR}/JsonBox/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/JsonBox/src/IndentCanceller.o JsonBox/src/IndentCanceller.cpp
+
+${OBJECTDIR}/JsonBox/src/Indenter.o: JsonBox/src/Indenter.cpp 
+	${MKDIR} -p ${OBJECTDIR}/JsonBox/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/JsonBox/src/Indenter.o JsonBox/src/Indenter.cpp
+
+${OBJECTDIR}/JsonBox/src/JsonParsingError.o: JsonBox/src/JsonParsingError.cpp 
+	${MKDIR} -p ${OBJECTDIR}/JsonBox/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/JsonBox/src/JsonParsingError.o JsonBox/src/JsonParsingError.cpp
+
+${OBJECTDIR}/JsonBox/src/JsonWritingError.o: JsonBox/src/JsonWritingError.cpp 
+	${MKDIR} -p ${OBJECTDIR}/JsonBox/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/JsonBox/src/JsonWritingError.o JsonBox/src/JsonWritingError.cpp
+
+${OBJECTDIR}/JsonBox/src/SolidusEscaper.o: JsonBox/src/SolidusEscaper.cpp 
+	${MKDIR} -p ${OBJECTDIR}/JsonBox/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/JsonBox/src/SolidusEscaper.o JsonBox/src/SolidusEscaper.cpp
+
+${OBJECTDIR}/JsonBox/src/Value.o: JsonBox/src/Value.cpp 
+	${MKDIR} -p ${OBJECTDIR}/JsonBox/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/JsonBox/src/Value.o JsonBox/src/Value.cpp
+
+${OBJECTDIR}/UnitTests.o: UnitTests.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/UnitTests.o UnitTests.cpp
+
 ${OBJECTDIR}/cppunitlite/Failure.o: cppunitlite/Failure.cpp 
 	${MKDIR} -p ${OBJECTDIR}/cppunitlite
 	${RM} "$@.d"
@@ -101,6 +153,11 @@ ${OBJECTDIR}/cppunitlite/TestResult.o: cppunitlite/TestResult.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/cppunitlite/TestResult.o cppunitlite/TestResult.cpp
 
+${OBJECTDIR}/jsonTests.o: jsonTests.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/jsonTests.o jsonTests.cpp
+
 ${OBJECTDIR}/scim/Email.o: scim/Email.cpp 
 	${MKDIR} -p ${OBJECTDIR}/scim
 	${RM} "$@.d"
@@ -111,20 +168,10 @@ ${OBJECTDIR}/scim/EnterpriseUser.o: scim/EnterpriseUser.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/scim/EnterpriseUser.o scim/EnterpriseUser.cpp
 
-${OBJECTDIR}/scim/Group.o: scim/Group.cpp 
+${OBJECTDIR}/scim/JSONHelper.o: scim/JSONHelper.cpp 
 	${MKDIR} -p ${OBJECTDIR}/scim
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/scim/Group.o scim/Group.cpp
-
-${OBJECTDIR}/scim/Manager.o: scim/Manager.cpp 
-	${MKDIR} -p ${OBJECTDIR}/scim
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/scim/Manager.o scim/Manager.cpp
-
-${OBJECTDIR}/scim/Meta.o: scim/Meta.cpp 
-	${MKDIR} -p ${OBJECTDIR}/scim
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/scim/Meta.o scim/Meta.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/scim/JSONHelper.o scim/JSONHelper.cpp
 
 ${OBJECTDIR}/scim/Name.o: scim/Name.cpp 
 	${MKDIR} -p ${OBJECTDIR}/scim
@@ -145,11 +192,6 @@ ${OBJECTDIR}/scim/User.o: scim/User.cpp
 	${MKDIR} -p ${OBJECTDIR}/scim
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/scim/User.o scim/User.cpp
-
-${OBJECTDIR}/tests.o: tests.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/tests.o tests.cpp
 
 # Subprojects
 .build-subprojects:

@@ -1,0 +1,15 @@
+/usr/local/lib/libJsonBox.a
+/usr/local/include/JsonBox/Convert.h
+/usr/local/include/JsonBox/Escaper.h
+/usr/local/include/JsonBox/Grammar.h
+/usr/local/include/JsonBox/IndentCanceller.h
+/usr/local/include/JsonBox/Indenter.h
+/usr/local/include/JsonBox/JsonParsingError.h
+/usr/local/include/JsonBox/JsonWritingError.h
+/usr/local/include/JsonBox/OutputFilter.h
+/usr/local/include/JsonBox/SolidusEscaper.h
+/usr/local/include/JsonBox/Value.h
+/usr/local/include/JsonBox.h
+/usr/local/include/JsonBox/Export.h
+/usr/local/lib/cmake/JsonBoxConfig.cmake
+/usr/local/lib/cmake/JsonBoxConfig-noconfig.cmake

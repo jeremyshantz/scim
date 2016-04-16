@@ -1,0 +1,2 @@
+/home/jshantz/NetBeansProjects/scims/build/CMakeFiles/JsonBox.dir
+/home/jshantz/NetBeansProjects/scims/build/CMakeFiles/example1.dir

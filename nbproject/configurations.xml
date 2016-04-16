@@ -24,28 +24,54 @@
         <itemPath>cppunitlite/TestResult.cpp</itemPath>
         <itemPath>cppunitlite/TestResult.h</itemPath>
       </logicalFolder>
+      <logicalFolder name="src" displayName="JsonBox" projectFiles="true">
+        <logicalFolder name="JsonBox" displayName="JsonBox" projectFiles="true">
+          <logicalFolder name="include" displayName="include" projectFiles="true">
+          </logicalFolder>
+          <itemPath>JsonBox/src/JsonBox/Convert.h</itemPath>
+          <itemPath>JsonBox/src/JsonBox/Escaper.h</itemPath>
+          <itemPath>JsonBox/src/JsonBox/Export.h</itemPath>
+          <itemPath>JsonBox/src/JsonBox/Grammar.h</itemPath>
+          <itemPath>JsonBox/src/JsonBox/IndentCanceller.h</itemPath>
+          <itemPath>JsonBox/src/JsonBox/Indenter.h</itemPath>
+          <itemPath>JsonBox/src/JsonBox/JsonBox.h</itemPath>
+          <itemPath>JsonBox/src/JsonBox/JsonParsingError.h</itemPath>
+          <itemPath>JsonBox/src/JsonBox/JsonWritingError.h</itemPath>
+          <itemPath>JsonBox/src/JsonBox/OutputFilter.h</itemPath>
+          <itemPath>JsonBox/src/JsonBox/SolidusEscaper.h</itemPath>
+          <itemPath>JsonBox/src/JsonBox/Value.h</itemPath>
+        </logicalFolder>
+        <itemPath>JsonBox/src/Convert.cpp</itemPath>
+        <itemPath>JsonBox/src/Escaper.cpp</itemPath>
+        <itemPath>JsonBox/src/IndentCanceller.cpp</itemPath>
+        <itemPath>JsonBox/src/Indenter.cpp</itemPath>
+        <itemPath>JsonBox/src/JsonParsingError.cpp</itemPath>
+        <itemPath>JsonBox/src/JsonWritingError.cpp</itemPath>
+        <itemPath>JsonBox/src/SolidusEscaper.cpp</itemPath>
+        <itemPath>JsonBox/src/Value.cpp</itemPath>
+        <itemPath>JsonBox/license.txt</itemPath>
+        <itemPath>JsonBox/readme.markdown</itemPath>
+      </logicalFolder>
       <logicalFolder name="scims" displayName="scims" projectFiles="true">
         <itemPath>scim/Email.cpp</itemPath>
         <itemPath>scim/Email.h</itemPath>
         <itemPath>scim/EnterpriseUser.cpp</itemPath>
         <itemPath>scim/EnterpriseUser.h</itemPath>
-        <itemPath>scim/Group.cpp</itemPath>
-        <itemPath>scim/Group.h</itemPath>
-        <itemPath>scim/Manager.cpp</itemPath>
-        <itemPath>scim/Manager.h</itemPath>
-        <itemPath>scim/Meta.cpp</itemPath>
-        <itemPath>scim/Meta.h</itemPath>
+        <itemPath>scim/JSONHelper.cpp</itemPath>
+        <itemPath>scim/JSONHelper.h</itemPath>
         <itemPath>scim/Name.cpp</itemPath>
         <itemPath>scim/Name.h</itemPath>
         <itemPath>scim/PhoneNumber.cpp</itemPath>
         <itemPath>scim/PhoneNumber.h</itemPath>
+        <itemPath>scim/RTypes.h</itemPath>
         <itemPath>scim/Resource.cpp</itemPath>
         <itemPath>scim/Resource.h</itemPath>
         <itemPath>scim/User.cpp</itemPath>
         <itemPath>scim/User.h</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>tests.cpp</itemPath>
+      <itemPath>UnitTests.cpp</itemPath>
+      <itemPath>jsonTests.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -71,8 +97,70 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <ccTool>
+          <standard>8</standard>
+          <commandlineTool>g++</commandlineTool>
+        </ccTool>
       </compileType>
+      <item path="JsonBox/license.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JsonBox/readme.markdown" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JsonBox/src/Convert.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="JsonBox/src/Escaper.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="JsonBox/src/IndentCanceller.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="JsonBox/src/Indenter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/Convert.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/Escaper.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/Export.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/Grammar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/IndentCanceller.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/Indenter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/JsonBox.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/JsonParsingError.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/JsonWritingError.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/OutputFilter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/SolidusEscaper.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/Value.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonParsingError.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonWritingError.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="JsonBox/src/SolidusEscaper.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="JsonBox/src/Value.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="Makefile" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="UnitTests.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="cppunitlite/Failure.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -94,6 +182,10 @@
       </item>
       <item path="cppunitlite/TestResult.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="jsonTests.cpp" ex="false" tool="1" flavor2="8">
+        <ccTool>
+        </ccTool>
+      </item>
       <item path="scim/Email.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="scim/Email.h" ex="false" tool="3" flavor2="0">
@@ -102,17 +194,9 @@
       </item>
       <item path="scim/EnterpriseUser.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="scim/Group.cpp" ex="false" tool="1" flavor2="0">
+      <item path="scim/JSONHelper.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="scim/Group.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="scim/Manager.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="scim/Manager.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="scim/Meta.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="scim/Meta.h" ex="false" tool="3" flavor2="0">
+      <item path="scim/JSONHelper.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="scim/Name.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -122,6 +206,8 @@
       </item>
       <item path="scim/PhoneNumber.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="scim/RTypes.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="scim/Resource.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="scim/Resource.h" ex="false" tool="3" flavor2="0">
@@ -129,8 +215,6 @@
       <item path="scim/User.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="scim/User.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="tests.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -153,7 +237,65 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="JsonBox/license.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JsonBox/readme.markdown" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JsonBox/src/Convert.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="JsonBox/src/Escaper.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="JsonBox/src/IndentCanceller.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="JsonBox/src/Indenter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/Convert.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/Escaper.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/Export.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/Grammar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/IndentCanceller.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/Indenter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/JsonBox.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/JsonParsingError.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/JsonWritingError.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/OutputFilter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/SolidusEscaper.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonBox/Value.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonParsingError.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="JsonBox/src/JsonWritingError.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="JsonBox/src/SolidusEscaper.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="JsonBox/src/Value.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="Makefile" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="UnitTests.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="cppunitlite/Failure.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -175,6 +317,8 @@
       </item>
       <item path="cppunitlite/TestResult.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="jsonTests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="scim/Email.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="scim/Email.h" ex="false" tool="3" flavor2="0">
@@ -183,17 +327,9 @@
       </item>
       <item path="scim/EnterpriseUser.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="scim/Group.cpp" ex="false" tool="1" flavor2="0">
+      <item path="scim/JSONHelper.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="scim/Group.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="scim/Manager.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="scim/Manager.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="scim/Meta.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="scim/Meta.h" ex="false" tool="3" flavor2="0">
+      <item path="scim/JSONHelper.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="scim/Name.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -203,6 +339,8 @@
       </item>
       <item path="scim/PhoneNumber.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="scim/RTypes.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="scim/Resource.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="scim/Resource.h" ex="false" tool="3" flavor2="0">
@@ -210,8 +348,6 @@
       <item path="scim/User.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="scim/User.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="tests.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>

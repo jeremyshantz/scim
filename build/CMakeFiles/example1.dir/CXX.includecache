@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jshantz/NetBeansProjects/scims/JsonBox/examples/main.cpp
+iostream
+-
+string
+-
+JsonBox.h
+/home/jshantz/NetBeansProjects/scims/JsonBox/examples/JsonBox.h
+
+/home/jshantz/NetBeansProjects/scims/JsonBox/include/JsonBox.h
+JsonBox/Value.h
+-
+
+/home/jshantz/NetBeansProjects/scims/JsonBox/include/JsonBox/Value.h
+string
+-
+map
+-
+vector
+-
+iostream
+-
+Export.h
+/home/jshantz/NetBeansProjects/scims/JsonBox/include/JsonBox/Export.h
+
+Export.h
+
